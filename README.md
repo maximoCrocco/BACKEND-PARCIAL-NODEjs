@@ -85,7 +85,7 @@ PostMan | https://www.postman.com/
 "newIdRol": "number"}
 ````
 ### ✴PEDIDOS
-#####POST-pedido
+##### POST-pedido
 `````json
 {"IDusuario": "number",
 "IDproducto": "number"}
