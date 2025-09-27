@@ -1,0 +1,2 @@
+exports.seleccionarUsuarioLogin = "SELECT usuario.id_usuario, usuario.email, usuario.contraseña, rol.nombre_rol FROM rol INNER JOIN usuario ON usuario.id_rol = rol.id_rol AND usuario.email = ?;"
+exports.registrarUsuario = "INSERT INTO usuario (`nombre`, `apellido`, `email`, `contraseña`, `telefono`, `direccion`) VALUES (?, ?, ?, ?, ?, ?);";
