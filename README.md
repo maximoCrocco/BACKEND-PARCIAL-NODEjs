@@ -8,7 +8,7 @@
 - Modularización de los archivos
 - Variables de entorno .env*
 
-#Requisitos previos
+# Requisitos previos
                     
 Programas  | Enlaces
 ------------- | -------------
@@ -21,33 +21,33 @@ PostMan | https://www.postman.com/
 ### REGISTRO
 - `POST /register` - Registrarse (Default rol: user).
 - `GET /login` - Login de tu usuario.
-###USUARIOS
+### USUARIOS
 - `GET /usuario/` - Obtener a todos los usuarios.
 - `GET /usuario/:id` - Obtener a un usuario dependiendo su id.
 - `POST /usuario/` - Crear un nuevo usuario.
 - `PUT /usuario/:id` - Modificar un usuario dependiendo su id.
 - `DELETE /usuario/:id` - Eliminar un usuario dependiendo su id.
-###PEDIDOS
+### PEDIDOS
 - `GET /pedido/` - Obtener a todos los pedidos.
 - `GET /pedido/:id` - Obtener a un pedido dependiendo su id.
 - `GET /pedido/lista/:id` - Obtener el pedido con su fecha de un usuario dependiendo su id, ademas del producto asociado con su detalle y precio.
 - `POST /pedido/` - Crear un nuevo pedido.
 - `PUT /pedido/:id` - Modificar un pedido dependiendo su id.
 - `DELETE /pedido/:id` - Eliminar un pedido dependiendo su id.
-###PRODUCTOS
+### PRODUCTOS
 - `GET /usuario/` - Obtener a todos los productos.
 - `GET /usuario/:id` - Obtener a un producto dependiendo su id.
 - `POST /usuarios/` - Crear un nuevo producto.
 - `PUT /usuarios/:id` - Modificar un producto dependiendo su id.
 - `DELETE /usuarios/:id` - Eliminar un producto dependiendo su id.
-###ROLES
+### ROLES
 - `GET /usuario/` - Obtener a todos los roles.
 - `GET /usuario/:id` - Obtener a un rol dependiendo su id.
 - `POST /usuarios/` - Crear un nuevo rol.
 - `PUT /usuarios/:id` - Modificar un rol dependiendo su id.
 - `DELETE /usuarios/:id` - Eliminar un rol dependiendo su id.
 # COMANDOS PARA POSTMAN👨‍🚀
-###✴REGISTRO
+### ✴REGISTRO
 ##### POST-Register
 ```json
 {'nombre':'...',
@@ -62,8 +62,8 @@ PostMan | https://www.postman.com/
 {'email':'...',
 'contraseña':'...'}
 ```
-###USUARIOS
-#####POST-usuario
+### USUARIOS
+##### POST-usuario
 ````json
 {"nombre": "string",
 "apellido": "string",
@@ -73,7 +73,7 @@ PostMan | https://www.postman.com/
 "direccion": "string",
 "idROL": "number"}
 ````
-#####PUT-usuario
+##### PUT-usuario
 ````json
 {"newID": "number",
 "newNombre": "string",
@@ -84,39 +84,39 @@ PostMan | https://www.postman.com/
 "newDireccion": "string",
 "newIdRol": "number"}
 ````
-###✴PEDIDOS
+### ✴PEDIDOS
 #####POST-pedido
 `````json
 {"IDusuario": "number",
 "IDproducto": "number"}
 ````
-#####PUT-pedido
+##### PUT-pedido
 ````json
 {"newID": "number",
 "newUsuarioid": "number",
 "newProductoid": "number"}
 ````
-###✴PRODUCTOS
-#####POST-producto
+### ✴PRODUCTOS
+##### POST-producto
 ````json
 {"nombre": "string",
 "descripcion": "string",
 "precio": "number"}
 ````
-#####PUT-producto
+##### PUT-producto
 ````json
 {"newID": "number",
 "newNombre": "string",
 "newDescripcion": "string",
 "newPrecio": "number"}
 ````
-###✴ROLES
-#####POST-rol
+### ✴ROLES
+##### POST-rol
 ````json
 {"id": "number",
 "nombre": "string"}
 ````
-#####PUT-rol
+##### PUT-rol
 ````json
 {"newID": "number",
 "newNombre": "string"}
@@ -139,8 +139,6 @@ Desde la opcion de "Buscar" o utilizando la siguiente combinación de teclas:
 ➡ dir ProyectoNode ⬅
 
 Si fue creado te aparecerá fecha, hora, cantidad de archivos y cantidad de bytes que pesa el contenido de la carpeta (En este caso 0 porque no tiene nada aún).
-
-######################################################################
 
 - Crear el archivo {{Docker-Compose.yml}} para la configuración que usara nuestro Docker para crear el contenedor, imagen y volumen.
 
@@ -208,7 +206,7 @@ docker-compose up -d
 
 5. Precional la tecla ENTER
 
-###INSTALAR DEPENDENCIAS EN VISUAL STUDIO CODE
+### INSTALAR DEPENDENCIAS EN VISUAL STUDIO CODE
 
 - DEPENDENCIAS:
 🔵JSONWEBTOKEN
