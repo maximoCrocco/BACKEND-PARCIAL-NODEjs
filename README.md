@@ -18,6 +18,7 @@ Docker | https://www.docker.com/
 PostMan | https://www.postman.com/
 
 # ✳ENDPOINTS✳
+
 ### REGISTRO
 - `POST /register` - Registrarse (Default rol: user).
 - `GET /login` - Login de tu usuario.
@@ -47,7 +48,9 @@ PostMan | https://www.postman.com/
 - `PUT /usuarios/:id` - Modificar un rol dependiendo su id.
 - `DELETE /usuarios/:id` - Eliminar un rol dependiendo su id.
 # COMANDOS PARA POSTMAN👨‍🚀
+
 ### ✴REGISTRO
+
 ##### POST-Register
 ```json
 {'nombre':'...',
@@ -57,14 +60,18 @@ PostMan | https://www.postman.com/
 'telefono':'...',
 'direccion':'...'}
 ```
+
 ##### GET-Login
 ```json
 {'email':'...',
 'contraseña':'...'}
 ```
+
 ### USUARIOS
+
 ##### POST-usuario
-````json
+
+```json
 {"nombre": "string",
 "apellido": "string",
 "email": "string",
@@ -72,9 +79,11 @@ PostMan | https://www.postman.com/
 "telefono": "string",
 "direccion": "string",
 "idROL": "number"}
-````
+```
+
 ##### PUT-usuario
-````json
+
+```json
 {"newID": "number",
 "newNombre": "string",
 "newAPellido": "string",
@@ -83,44 +92,57 @@ PostMan | https://www.postman.com/
 "newTelefono": "string",
 "newDireccion": "string",
 "newIdRol": "number"}
-````
+```
+
 ### ✴PEDIDOS
+
 ##### POST-pedido
-`````json
+
+```json
 {"IDusuario": "number",
 "IDproducto": "number"}
-````
+```
+
 ##### PUT-pedido
-````json
+
+```json
 {"newID": "number",
 "newUsuarioid": "number",
 "newProductoid": "number"}
-````
+```
+
 ### ✴PRODUCTOS
+
 ##### POST-producto
-````json
+
+```json
 {"nombre": "string",
 "descripcion": "string",
 "precio": "number"}
-````
+```
+
 ##### PUT-producto
-````json
+
+```json
 {"newID": "number",
 "newNombre": "string",
 "newDescripcion": "string",
 "newPrecio": "number"}
-````
+```
+
 ### ✴ROLES
+
 ##### POST-rol
-````json
+
+```json
 {"id": "number",
 "nombre": "string"}
-````
+```
 ##### PUT-rol
-````json
+```json
 {"newID": "number",
 "newNombre": "string"}
-````
+```
 - Crear la carpeta donde guardaremos todos los archivos necesarios para el proyecto:
 
 1) Abrir la consola de comandos (CMD) /
@@ -176,7 +198,7 @@ echo > docker-compose.yml
 
 2. Copiar y pegar los siguientes datos:
 
-````json
+```json
 version: '3.9'
 
 services:
@@ -196,7 +218,7 @@ services:
 
 volumes:
   mysql_data:
-````
+```
 
 3. Abrir una Terminal
 
@@ -220,8 +242,8 @@ docker-compose up -d
 3. Abrir una nueva terminal
 4. Escribir el siguiente comando:
 
-````
+```
 npm init -y
 npm i
 npm i express jsonwebtoken dotenv mysql2 bcrypt
-````
+```
